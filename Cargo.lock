@@ -10864,7 +10864,7 @@ checksum = "1e9df38ee2d2c3c5948ea468a8406ff0db0b29ae1ffde1bcf20ef305bcc95c51"
 [[package]]
 name = "wry"
 version = "0.50.0"
-source = "git+https://github.com/Simon-Laux/wry?branch=reload#1f5c708964571a02ae7de0219481c7acf21600a0"
+source = "git+https://github.com/Simon-Laux/wry?branch=deltachat-branch#3b11eb79fada8ce94c37c134765045226b5377a2"
 dependencies = [
  "base64 0.22.1",
  "block2 0.6.0",
