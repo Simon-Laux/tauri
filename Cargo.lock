@@ -8455,7 +8455,7 @@ dependencies = [
  "urlpattern",
  "uuid",
  "webkit2gtk",
- "webview2-com",
+ "webview2-com 0.35.0",
  "window-vibrancy",
  "windows 0.59.0",
 ]
@@ -8816,7 +8816,7 @@ dependencies = [
  "tracing",
  "url",
  "webkit2gtk",
- "webview2-com",
+ "webview2-com 0.35.0",
  "windows 0.59.0",
  "wry",
 ]
@@ -10170,9 +10170,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1730fcfc2f6b32d92096f5e97bc2b5ccafe14ad9d4787ef106daab2a20896def"
 dependencies = [
  "webview2-com-macros",
- "webview2-com-sys",
+ "webview2-com-sys 0.35.0",
  "windows 0.59.0",
  "windows-core 0.59.0",
+ "windows-implement",
+ "windows-interface",
+]
+
+[[package]]
+name = "webview2-com"
+version = "0.36.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0d606f600e5272b514dbb66539dd068211cc20155be8d3958201b4b5bd79ed3"
+dependencies = [
+ "webview2-com-macros",
+ "webview2-com-sys 0.36.0",
+ "windows 0.60.0",
+ "windows-core 0.60.1",
  "windows-implement",
  "windows-interface",
 ]
@@ -10198,6 +10212,17 @@ dependencies = [
  "windows 0.59.0",
  "windows-core 0.59.0",
  "windows-targets 0.53.0",
+]
+
+[[package]]
+name = "webview2-com-sys"
+version = "0.36.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bfb27fccd3c27f68e9a6af1bcf48c2d82534b8675b83608a4d81446d095a17ac"
+dependencies = [
+ "thiserror 2.0.10",
+ "windows 0.60.0",
+ "windows-core 0.60.1",
 ]
 
 [[package]]
@@ -10864,9 +10889,8 @@ checksum = "1e9df38ee2d2c3c5948ea468a8406ff0db0b29ae1ffde1bcf20ef305bcc95c51"
 
 [[package]]
 name = "wry"
-version = "0.49.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "647c7c6ce36008e30a2a2ffce6176469144982f01b27047939dafc40a4e42cef"
+version = "0.50.0"
+source = "git+https://github.com/Simon-Laux/wry?branch=reload#f5f94f2a907e6a7ee9f315f750ef6fccb77dcb31"
 dependencies = [
  "base64 0.22.1",
  "block2 0.6.0",
@@ -10900,9 +10924,9 @@ dependencies = [
  "url",
  "webkit2gtk",
  "webkit2gtk-sys",
- "webview2-com",
- "windows 0.59.0",
- "windows-core 0.59.0",
+ "webview2-com 0.36.0",
+ "windows 0.60.0",
+ "windows-core 0.60.1",
  "windows-version",
  "x11-dl",
 ]
